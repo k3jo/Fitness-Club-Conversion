@@ -1,6 +1,16 @@
 // FITNESS CLUB
 // STYLES FOR COMMUNITIY SECTION
 
+.community h2, .community h3, p {
+	@include media($max550){
+		text-align:left;
+	}
+}
+.community p {
+	@include media($max550){
+		margin-bottom:50px;
+	}
+}
 .community {
 	clear:both;
 	text-align:center;
@@ -13,9 +23,18 @@
 		font-weight:300;
 		text-transform:uppercase;
 		margin-right:0.5rem;
+		display:inline-block;
+		@include media($max550){
+			width:70%;
+
+		}
 		&:hover {
 			background: $cyan;
 		}
 	}
 }
-
+.community-button-01 {
+	@include media($max550){
+		margin-bottom:15px;
+	}
+}

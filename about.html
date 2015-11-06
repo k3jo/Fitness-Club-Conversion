@@ -10,6 +10,9 @@
 
 	<!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- Favicon credit: Ema Dimitrova -->
+	<link type="image/png" href="assets/favicon.png" rel="icon">
+
 
 </head>
 <body>
@@ -29,12 +32,25 @@
 					</ul>			
 				</div> <!-- end of hours -->			
 		</div><!-- .nav-container -->
-		<div class="responsive-hours hours">		
-			<ul>
-				<li><img src="assets/icon-clock.png" alt="clock icon"><span> Opening Hours</span></li>
-				<li>Monday - Sunday 8:00 - 22:00</li>
-			</ul>			
-		</div> <!-- end of responsive-hours hours -->
+
+		<!-- ================= -->
+		<!-- RESPONSIVE MENU -->
+ 		<div class="modal-wrapper">
+		    <button class="show-button">☰ Menu</button>
+		  </div> <!-- .wrapper -->
+
+		  <div class="modal-container">
+		    <div class="overlay"></div>
+		    <div class="responsive-nav-container">
+		      <span class="close-button"><i class="fa fa-times"></i></i></span>
+		      <ul>
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="team.html">Our Team</a></li>
+		        <li><a href="about.html">About Us</a></li>
+		        <li><a href="#contact">Contact</a></li>
+		      </ul>
+		    </div> <!-- .responsive-nav-container -->
+		   </div><!-- .modal-container -->
 	</nav>
 
 	<section class="button">
@@ -121,11 +137,23 @@
 				</div>
 				<div class="details contact">
 					<h5>Contact Us</h5>
-					<p><span>Mail</span>STAYFIT@gmail.com</p>
-					<p><span>Phone</span>+61 123 456 789</p>
-					<p><span>Adress</span>New York City</p>
-					<p>Avenue Street 321</p>
-					<p>Melbourne 3000</p>
+						<div class="contact-details">
+							<div class="email-content">
+								<p class="email">STAYFIT@gmail.com</p>
+							</div>
+							<div class="phone-content">
+								<p class="phone">+61 123 456 789</p>
+							</div>
+							<div class="address-content">
+								<p class="address">New York City</p>
+								<p>Avenue Street 321</p>
+								<p>Melbourne 3000</p>
+							</div>
+
+						</div>
+						
+
+					
 				</div>
 			</div><!-- .details-container -->
 		</div><!-- .wrapper -->

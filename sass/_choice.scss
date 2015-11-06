@@ -55,6 +55,9 @@
 		position:absolute;
 		top:41%;
 		left:11%;
+		@include media($max550){
+			left:27%;
+		}
 	}
 	.typebox-plan {
 		font-family: 'Montserrat', sans-serif;

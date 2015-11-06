@@ -2,7 +2,7 @@
 // STYLES FOR STORIES
 
 .stories {
-	@include media($tabletplus){
+	@include media($max1199){
 		padding:3rem 0;
 	}
 }
@@ -43,9 +43,13 @@ ul.responsive-story  {
 	float:right;
 	width: 50%;
 	position:relative;
+	line-height:0;
 	@include media($tablet){
 		display:none;
 	}
+}
+.stories-right img {
+	width:100%;
 }
 .stories-right ul {
 	margin:0;
@@ -54,14 +58,14 @@ ul.responsive-story  {
 	@include media($min1200){
 		bottom:3%;
 		left:2%;
-		@include media($max1199){
-			display:none;
-		}
 	}
 	li {
 		display:inline-block;
 		font-size:14px;
-		padding:10px 20px;
+		padding:10px 17px;
 		color:white;
+		@include media($max1199){
+			display:none;
+		}
 	}
 }

@@ -6,8 +6,9 @@ nav {
 	background: $darkblue;
 	overflow:hidden;
 	padding-left:10%;
-	@include media($max700){
-		padding-left:0;
+
+	@include media($tablet){
+		padding-right:10%;
 	}
 }
 .nav-container {
@@ -15,31 +16,30 @@ nav {
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:flex-end;
-	@include media($max700){
+	@include media($tablet){
 		justify-content:center;
 	}
 }
 #logo {
 	float:left;
 	padding-top:18px;
-	@include media($max700){
-		float:none;
-		display:block;
-		text-align:center;
+	@include media($tabletplus){
+		padding-bottom:12px;
 	}
 }
 .nav-container ul, .hours ul {
 	margin:0;
 	padding:0;
 	padding-top:12px;
-	@include media($max700){
+	padding-bottom::12px;
+	@include media($tablet){
 		text-align:center;
 		display:none;
 	}
 	li {
 		display:inline-block;
 		margin:10px;
-		@include media($max700){
+		@include media($tablet){
 			display:block;
 			padding: 1rem;
 		}
@@ -84,52 +84,40 @@ div.hours::before {
     border-bottom: 35px solid rgb(17,188,244);
     position: absolute;
     right: 100%;
+    @include media($tabletplus){
+    	display:none;
+    }
 }
 .default-hours {
 	@include media($tabletplus){
 		display:none;
 	}
 }
-.responsive-hours {
-	display:none;
-	// @include media($tabletplus){
-	// 	display:block;
-	//     width: 50%;
-	// }
-}
+
 // MOBILE MENU
-// .menu-trigger {
-// 	display:block;
-// 	padding: 1rem;
-// 	margin:20px 10px 0 10px;
-// 	color:white;
-// 	text-decoration: none;
-// 	text-align:center;
-// 	display:none;
-// 	@include media($max700){
-// 		display:block;
-// 	}
-// }
+
 .modal-wrapper {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top:0;
-		left:0;
+		// position: absolute;
+		// width: 100%;
+		// height: 100%;
+		// top:0;
+		// left:0;
 		display:flex;
-		justify-content:center;
-		align-items:center;
+		justify-content:flex-end;
+		// align-items:center;
 }
 .show-button {
 	display:none;
-	@include media($max700){
+	@include media($tablet){
 		display:block;
-		background-color: white;
-		padding: 25px 50px;
+		background-color: $darkblue;
+		padding: 10px 0 0 20px;
+		margin-top:11px;
 		border: none;
-		font-size:40px;
+		font-family: 'Montserrat', sans-serif;
+		font-size:20px;
 		text-transform: uppercase;
-		color:gray;
+		color:white;
 		z-index:50;//
 	}	
 }
@@ -145,17 +133,17 @@ div.hours::before {
 	opacity:0; 
 	visibility:hidden;
 	transition: all 0.5s ease;
+	justify-content:center;
+	align-items:center;
 }
 .modal-container.show {
 	opacity:1;
 	visibility:visible;
 	transform:scale(1);
-	justify-content:center;
-	align-items:center;
 	z-index:60;
 }
 .overlay {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.55);
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -187,7 +175,7 @@ div.hours::before {
 /*  */
 div.responsive-nav-container {
 	z-index:100;
-	background: yellow;
+	background: gold;
 	width:300px;
 	height:300px;
 	position:relative;
@@ -199,7 +187,8 @@ div.responsive-nav-container {
 	li {
 		margin:10px;
 		display:block;
-		padding: 1rem;		
+		padding: 1rem;
+		text-align:center;		
 		a {
 			text-decoration:none;
 			color:gray;

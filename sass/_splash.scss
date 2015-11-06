@@ -2,35 +2,50 @@
 // SPLASH STYLES
 
 .splash {
+	padding:5rem 0;
 	background: url("assets/home/hero.jpg");
 	background-size:cover;
 	height: 90vh;
 	margin: 0 auto;
 	text-align:center;
+	@include media($mobile){
+		padding:2rem 0;
+	}
 }
 div.splash-header {
 	transform: skewX(-30deg);
 	display:inline-block;
 	margin:0.5rem 0;
 }
-.splash-header h3 {
-	color:white;
-	// display:inline;
-	padding:5px 2rem;
-	line-height:3rem;
-	transform: skewX(30deg);
-}
-
-.h-cyan {
-	font-size:1rem;
+.header-cyan {
 	background: $cyan;
+	font-size:1rem;
 	transform: skewX(30deg);
+	@include media($mobile){
+		font-size: 0.7rem;
+		letter-spacing: 1.1px;
+	}
 	.fa {
 		color:white;
 	}
-
 }
-.h-blue {
-	font-size:1.7rem;
+.header-blue {
 	background: $darkblue;
+	font-size:1.5rem;
+	// background: $darkblue;
+	@include media($mobile){
+		font-size:0.9rem;
+		letter-spacing: 1px;
+	}
 }
+.splash-header h3 {
+	color:white;
+	padding:5px 2rem;
+	font-weight:300;
+	line-height:3rem;
+	transform: skewX(30deg);
+	@include media($mobile){
+		line-height:1.5rem;
+	}
+}
+

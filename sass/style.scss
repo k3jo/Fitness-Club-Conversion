@@ -7,11 +7,14 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+
+
 $mobile: new-breakpoint(max-width 350px);
 $max550: new-breakpoint(max-width 550px);
 $max700: new-breakpoint(max-width 700px);
-$tablet: new-breakpoint(max-width 767px);
+$tablet: new-breakpoint(max-width 770px);
 $tabletplus: new-breakpoint(max-width 985px);
+$max1024: new-breakpoint(max-width 1024px);
 $max1130: new-breakpoint(max-width 1130px);
 $max1199: new-breakpoint(max-width 1199px);
 $min1200: new-breakpoint(min-width 1200px);
@@ -65,7 +68,7 @@ nav {
 	width: 80%;
 	margin: 0 auto;
 }
-.splash,
+// .splash,
 .choice,
 .courses,
 .team, 

@@ -7,11 +7,15 @@
 	.sk-1 {
 		float:left;
 		width: 50%;
+		@include media($tabletplus){
+			float:none;
+			width:100%;
+		}
 	}
 	.sk-2 {
 		width: 50%;
 		float:right;
-		@include media($tablet){
+		@include media($tabletplus){
 			display:none;
 		}
 		img {
@@ -21,5 +25,11 @@
 }
 .success-wrapper {
 	padding-left:20%;
-
+	@include media($tabletplus){
+		padding-left:10%;
+		width:80%;
+	}
+	// img {
+	// 	width: 100%;
+	// }
 }

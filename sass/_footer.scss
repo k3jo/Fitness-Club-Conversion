@@ -4,7 +4,7 @@
 footer {
 	background: $darkblue;
 	font-size:11px;
-	// margin-top:-12px;
+	padding-bottom:1.5rem;
 	h5 {
 		margin-bottom: 20px;
 	}
@@ -16,7 +16,7 @@ footer {
 .touch {
 	padding:1.5rem 0;
 	border-bottom: 1px solid $grey;
-	@include media($tablet){
+	@include media($tabletplus){
 		padding:1.5rem 0 0 0;
 		border-bottom:none;
 	}
@@ -53,7 +53,7 @@ footer {
 .details {
 	clear:both;
 	width: 25%;
-	@include media($tablet){
+	@include media($tabletplus){
 		width: 47%;
 		margin-right:2%;
 		border-top:1px solid $grey;
@@ -93,11 +93,14 @@ footer {
 	}
 }
 // QUICKLINKS / LINKS
-.details .links {
+.details ul.links {
 	margin:0;
 	padding:0;
+	-webkit-column-count:2;
+	columns:2;
 		li {
-			display:inline-block;
+			display:list-item;
+			list-style-type:none;
 			a {
 				color: $grey;
 				&:hover {
@@ -109,19 +112,62 @@ footer {
 
 // POPULAR TAGS
 ul.tags {
-	-webkit-column-count:3;
-	columns:3;
+	// -webkit-column-count:3;
+	// columns:3;
 	li {
-
+		padding:0;
+		margin-bottom:4px;
 		a {
 			color:white;
 			background: #17263C;
 			padding:10px;
-			margin-bottom:2px;
+			width:70px;	
+			text-align:center;
+			text-transform:uppercase;
 			&:hover {
 				background: $cyan;
 			}
 		}
 }
 }
+// CONTACT DETAILS
+.contact {
+	position:relative;
+}
+.contact-details {
+	padding-left: 7.5rem;
+}
+// text-indenting
+.email-content {
+	text-indent:-3.7rem;
+}
+.phone-content {
+	text-indent:-3.7rem;
+}
+.address-content {
+	text-indent:-3.7rem;
+}
+
+
+// ::before Content details
+.email, .phone, .address {
+	position:relative;
+}
+.email::before {
+	content: "Mail";
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	position:absolute;
+}
+.phone::before {
+	@extend .email::before;
+	content: "Phone";
+}
+.address::before {
+	@extend .email::before;
+	content: "Address";
+}
+
+
 

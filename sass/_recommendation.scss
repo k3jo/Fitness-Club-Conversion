@@ -15,6 +15,7 @@
 .quotebox {
 	float:left;
 	width: 40%;
+	padding-top:2rem;
 	@include media($tabletplus){
 		float:none;
 		width: 100%;
