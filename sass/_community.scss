@@ -1,0 +1,21 @@
+// FITNESS CLUB
+// STYLES FOR COMMUNITIY SECTION
+
+.community {
+	clear:both;
+	text-align:center;
+	button {
+		background: $darkblue;
+		border:none;
+		color:white;
+		padding: 10px 20px;
+		font-family:'Montserrat', sans-serif;
+		font-weight:300;
+		text-transform:uppercase;
+		margin-right:0.5rem;
+		&:hover {
+			background: $cyan;
+		}
+	}
+}
+

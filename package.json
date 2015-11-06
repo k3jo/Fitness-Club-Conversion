@@ -1,0 +1,31 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "psd conversion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k3jo/Fitness-Club-Conversion.git"
+  },
+  "keywords": [
+    "psd",
+    "conversion"
+  ],
+  "author": "joanne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k3jo/Fitness-Club-Conversion/issues"
+  },
+  "homepage": "https://github.com/k3jo/Fitness-Club-Conversion#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4",
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
+  }
+}

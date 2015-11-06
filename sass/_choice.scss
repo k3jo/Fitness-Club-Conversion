@@ -1,0 +1,72 @@
+// FITNESS CLUB
+// STYLES FOR CHOICE SECTION
+
+.choice-header {
+	display:flex;
+	flex-direction:row;
+	@include media($tablet){
+		display:block;
+	}
+	p {
+		font-size:14px;
+		padding-left:1rem;
+		border-left: 3px solid $cyan;
+		margin:0;
+		@include media($tablet){
+			margin-top:1rem;
+		}
+	}
+}
+.h2-left {
+	width: 45%;
+	padding-right:1rem;
+	@include media($tablet){
+		width: 100%;
+		@include media($mobile){
+			width: 100%;
+		}
+	}
+}
+.choice-type-container {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	margin-top:3rem;
+	@include media($tablet){
+		text-align:center;
+	}
+}
+.typebox {
+	width: 25%;
+	position:relative;
+	font-weight:700;
+	text-align:center;
+	@include media($tablet){
+		width: 45%;
+		margin-bottom:3rem;
+		@include media($max550){
+			width: 100%;
+		}
+	}
+	.typebox-price {
+		font-family: 'Montserrat', sans-serif;
+		font-size:22px;
+		color:white;
+		position:absolute;
+		top:41%;
+		left:11%;
+	}
+	.typebox-plan {
+		font-family: 'Montserrat', sans-serif;
+		text-transform:uppercase;
+		font-size:12px;
+		font-weight:400;
+		letter-spacing: 2px;
+		margin:0;
+		text-align:center;
+		position:absolute;
+		top:20%;
+		left: 39%;
+	}
+
+}

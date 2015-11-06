@@ -1,0 +1,106 @@
+// FITNESS CLUB
+// STYLES FOR PARTNERS
+
+.partners-wrapper {
+	display:none;
+	@include media($tablet){
+		display:block;
+		width: 80%;
+		margin:0 auto;
+	}
+}
+.partners-container {
+	clear:both;
+	display:flex;
+	flex-direction:row;
+	@include media($tablet){
+		padding:3rem 0;
+	}
+}
+// Partners Heading
+.partners-01 {
+	background: $cyan;
+	position:relative;
+	margin-right:6rem;
+	width: 255px;
+	padding:10px;
+	@include media($tablet){
+		align-self:flex-start;
+		background:white;
+		margin-right:0;
+		width: 100%;
+		padding:0;
+	}
+	p {
+		color:white;
+		text-transform:uppercase;
+		line-height:0;
+		@include media($tablet){
+			@extend h2;
+			color:black;
+			font-family: 'Montserrat', sans-serif;
+			font-weight:700;
+		}
+	}
+	.space {
+		font-family:Montserrat, sans-serif;
+		font-size:23px;
+		@include media($tablet){
+			@extend h3;
+			font-size: 1.17em;
+		}
+	}
+}
+div.partners-01::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-left: 40px solid rgb(17,188,244);
+    border-bottom: 40px solid rgb(17,188,244);
+    position: absolute;
+    left: 100%;
+    top:0%;
+    @include media($tablet){
+    	display:none;
+    }
+}
+.partners-shape {
+	overflow:hidden;
+	width: 495px;
+	@include media($tablet){
+		width: 100%;
+	}
+}
+// The Partners
+.partners {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-items:baseline;
+	@include media($max1130){
+		justify-content:flex-end;
+		@include media($tablet){
+			justify-content: flex-start;
+			margin-top:2rem;
+		}
+	}
+}
+.partners-container-co {
+	padding:10px;
+	margin:0.5rem 1rem;
+	@include media($max1130){
+		width: 40%;
+		@include media($tablet){
+			padding: 10px 10px 10px 0;
+			margin: 0.5rem 1rem 0.5rem 0;
+			// width: 100%;
+		}
+	}
+}
+.partners-container-co img {
+	@include media($tablet){
+		width: 80%;
+	}
+}
+

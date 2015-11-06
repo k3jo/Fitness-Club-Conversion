@@ -1,0 +1,25 @@
+// FITNESS CLUB
+// STYLES FOR SUCCESS KEYS
+
+.successkeys {
+	display:flex;
+	flex-direction:row;
+	.sk-1 {
+		float:left;
+		width: 50%;
+	}
+	.sk-2 {
+		width: 50%;
+		float:right;
+		@include media($tablet){
+			display:none;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+.success-wrapper {
+	padding-left:20%;
+
+}

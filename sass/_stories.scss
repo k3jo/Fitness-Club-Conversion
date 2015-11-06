@@ -1,0 +1,67 @@
+// FITNESS CLUB
+// STYLES FOR STORIES
+
+.stories {
+	@include media($tabletplus){
+		padding:3rem 0;
+	}
+}
+.stories-left {
+	float:left;
+	width: 50%;
+	@include media($tablet){
+		float:none;
+		width: 100%;
+	}
+	p {
+		line-height:2.5;
+	}
+}
+.story-wrapper {
+	padding-left:20%;
+	@include media($tablet){
+		padding-left:0;
+		width: 80%;
+		margin:0 auto;
+	}
+}
+ul.responsive-story  {	
+	display:none;
+	margin:0;
+	padding:0;
+	@include media($max1199){
+		display:block;
+	}
+	li {
+		list-style-type:none;
+		line-height:1.5;
+	}
+	
+}
+// START OF .STORIES-RIGHT
+.stories-right {
+	float:right;
+	width: 50%;
+	position:relative;
+	@include media($tablet){
+		display:none;
+	}
+}
+.stories-right ul {
+	margin:0;
+	padding:0;
+	position:absolute;
+	@include media($min1200){
+		bottom:3%;
+		left:2%;
+		@include media($max1199){
+			display:none;
+		}
+	}
+	li {
+		display:inline-block;
+		font-size:14px;
+		padding:10px 20px;
+		color:white;
+	}
+}

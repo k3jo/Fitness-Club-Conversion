@@ -1,0 +1,216 @@
+// FITNESS CLUB STYLES
+// NAVIGATION
+
+
+nav {
+	background: $darkblue;
+	overflow:hidden;
+	padding-left:10%;
+	@include media($max700){
+		padding-left:0;
+	}
+}
+.nav-container {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+	@include media($max700){
+		justify-content:center;
+	}
+}
+#logo {
+	float:left;
+	padding-top:18px;
+	@include media($max700){
+		float:none;
+		display:block;
+		text-align:center;
+	}
+}
+.nav-container ul, .hours ul {
+	margin:0;
+	padding:0;
+	padding-top:12px;
+	@include media($max700){
+		text-align:center;
+		display:none;
+	}
+	li {
+		display:inline-block;
+		margin:10px;
+		@include media($max700){
+			display:block;
+			padding: 1rem;
+		}
+		a {
+			text-decoration:none;
+			color:$grey;
+			text-transform:uppercase;
+			padding:0.5rem 1rem;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
+.hours {
+	background: $cyan;
+	text-align:center;
+	position:relative;
+	margin-left:3.5rem;
+	ul {
+		margin:0;
+		padding:0;
+		li {
+			color:white;
+			display:block;
+			@include media($tabletplus){
+				display:inline;
+			}
+			span {
+				text-transform:uppercase;
+			}
+		}
+
+	}
+}
+div.hours::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-right: 35px solid rgb(17,188,244);
+    border-bottom: 35px solid rgb(17,188,244);
+    position: absolute;
+    right: 100%;
+}
+.default-hours {
+	@include media($tabletplus){
+		display:none;
+	}
+}
+.responsive-hours {
+	display:none;
+	// @include media($tabletplus){
+	// 	display:block;
+	//     width: 50%;
+	// }
+}
+// MOBILE MENU
+// .menu-trigger {
+// 	display:block;
+// 	padding: 1rem;
+// 	margin:20px 10px 0 10px;
+// 	color:white;
+// 	text-decoration: none;
+// 	text-align:center;
+// 	display:none;
+// 	@include media($max700){
+// 		display:block;
+// 	}
+// }
+.modal-wrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+}
+.show-button {
+	display:none;
+	@include media($max700){
+		display:block;
+		background-color: white;
+		padding: 25px 50px;
+		border: none;
+		font-size:40px;
+		text-transform: uppercase;
+		color:gray;
+		z-index:50;//
+	}	
+}
+.modal-container {
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10;//
+	display: flex;
+	transform:scale(1.3);
+	opacity:0; 
+	visibility:hidden;
+	transition: all 0.5s ease;
+}
+.modal-container.show {
+	opacity:1;
+	visibility:visible;
+	transform:scale(1);
+	justify-content:center;
+	align-items:center;
+	z-index:60;
+}
+.overlay {
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+}
+.modal {
+	width: 300px;
+	background: white;
+	padding: 15px;
+	position: relative;
+	z-index:10;//
+	margin:auto;
+}
+.close-button {
+	position: absolute;
+	right:-15px; 
+	top:-15px;
+	display: flex;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color:rgba(150,0,0,0.8);
+}
+.close-button i {
+	margin:auto;
+	color:white;
+}
+/*  */
+div.responsive-nav-container {
+	z-index:100;
+	background: yellow;
+	width:300px;
+	height:300px;
+	position:relative;
+}
+.responsive-nav-container ul {
+	margin:0;
+	padding:0;
+	padding-top:12px;
+	li {
+		margin:10px;
+		display:block;
+		padding: 1rem;		
+		a {
+			text-decoration:none;
+			color:gray;
+			text-transform:uppercase;
+			padding:0.5rem 1rem;
+
+		}
+	}
+}
+
+
+
+
+

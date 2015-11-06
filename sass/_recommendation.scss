@@ -1,0 +1,34 @@
+// FITNESS CLUB
+// STYLES FOR RECOMMENDATION
+
+.recommendation {
+	background: $cyan;
+	text-align:center;
+	overflow:hidden;
+	@include media($tabletplus){
+		padding:3rem 0;
+	}
+	p {
+		color:white;
+	}
+}
+.quotebox {
+	float:left;
+	width: 40%;
+	@include media($tabletplus){
+		float:none;
+		width: 100%;
+	}
+	p .fa {
+		@include media($tabletplus){
+			font-size:26px;
+		}
+	}
+}
+.recommendation img {
+	float:right;
+	width: 60%;
+	@include media($tabletplus){
+		display:none;
+	}
+}

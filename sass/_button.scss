@@ -1,0 +1,16 @@
+// FITNESS CLUB
+// STYLES FOR BUTTON SECTION
+
+.button {
+	background: $greyblue;
+	padding:3rem 0;
+	p {
+		margin:0;
+		font-size:20px;
+		text-transform:uppercase;
+		color:white;
+		background: $cyan;
+		display:inline-block;
+		padding:8px 20px;
+	}
+}

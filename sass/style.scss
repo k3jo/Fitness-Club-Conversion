@@ -1,0 +1,76 @@
+// FITNESS CLUB STYLES
+// 
+
+@import 'normalize';
+@import 'variables';
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 350px);
+$max550: new-breakpoint(max-width 550px);
+$max700: new-breakpoint(max-width 700px);
+$tablet: new-breakpoint(max-width 767px);
+$tabletplus: new-breakpoint(max-width 985px);
+$max1130: new-breakpoint(max-width 1130px);
+$max1199: new-breakpoint(max-width 1199px);
+$min1200: new-breakpoint(min-width 1200px);
+
+@import 'navigation';
+@import 'splash';
+@import 'choice';
+@import 'courses';
+@import 'recommendation';
+@import 'stories';
+@import 'partners';
+@import 'footer';
+
+@import 'button';
+@import 'team';
+@import 'profile';
+@import 'community';
+@import 'successkeys';
+
+// GENERAL STYLES
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+}
+p {
+	line-height:2;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+}
+h2 {
+	font-size:1.7rem;
+	line-height:2.5rem;
+}
+h3 {
+	color:$cyan;
+	line-height:2rem;
+}
+h5 {
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+}
+nav {
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+.splash,
+.choice,
+.courses,
+.team, 
+.profile,
+.community,
+.successkeys {
+	padding:3rem 0;
+}

@@ -1,0 +1,36 @@
+// FITNESS CLUB
+// SPLASH STYLES
+
+.splash {
+	background: url("assets/home/hero.jpg");
+	background-size:cover;
+	height: 90vh;
+	margin: 0 auto;
+	text-align:center;
+}
+div.splash-header {
+	transform: skewX(-30deg);
+	display:inline-block;
+	margin:0.5rem 0;
+}
+.splash-header h3 {
+	color:white;
+	// display:inline;
+	padding:5px 2rem;
+	line-height:3rem;
+	transform: skewX(30deg);
+}
+
+.h-cyan {
+	font-size:1rem;
+	background: $cyan;
+	transform: skewX(30deg);
+	.fa {
+		color:white;
+	}
+
+}
+.h-blue {
+	font-size:1.7rem;
+	background: $darkblue;
+}

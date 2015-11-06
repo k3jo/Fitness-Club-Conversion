@@ -1,0 +1,28 @@
+// FITNESS CLUB
+// STYLES FOR COURSES SECTION
+
+.courses {
+	clear:both;
+}
+.activities-container {
+	columns:2;
+	@include media($tablet){
+		columns:1;
+	}
+}
+.activities {
+	overflow:hidden;
+	border-bottom:1px solid gray;
+	margin-right:3%;
+	padding:1.5rem 0;
+	p {
+
+	}
+	button {
+		text-transform:uppercase;
+		background: white;
+		border:1px solid gray;
+		padding:3px 10px;
+		float:right;
+	}
+}
