@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   // $('.photo-trigger').click(function() {
   //   $('.gallery-filter ul li a').slideToggle(500);
   // });//end slide toggle
@@ -17,6 +17,23 @@ $(document).ready(function() {
  //  $(window).scroll(function() {
  //    $('.responsive-nav-container').slideToggle(500);
  //  });//end slide toggle
+
+var heightening = function(){
+  $('.teambox').each(function(){
+    var height = 0;
+    $('img', this).each(function(){
+      if($(this).height() > height){
+        height = $(this).height();
+      }
+    });
+    $('.trainer-hiring').height(height);
+  });
+}
+heightening();
+
+$(window).resize(function(){
+  heightening();
+});
 
 
 var modal = {};

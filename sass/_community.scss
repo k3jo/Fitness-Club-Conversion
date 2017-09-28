@@ -3,29 +3,29 @@
 
 .community h2, .community h3, p {
 	@include media($max550){
-		text-align:left;
+		text-align: left;
 	}
 }
 .community p {
 	@include media($max550){
-		margin-bottom:50px;
+		margin-bottom: 50px;
 	}
 }
 .community {
-	clear:both;
-	text-align:center;
+	clear: both;
+	text-align: center;
 	button {
 		background: $darkblue;
-		border:none;
-		color:white;
+		border: none;
+		color: white;
 		padding: 10px 20px;
 		font-family:'Montserrat', sans-serif;
-		font-weight:300;
-		text-transform:uppercase;
-		margin-right:0.5rem;
-		display:inline-block;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-right: 0.5rem;
+		display: inline-block;
 		@include media($max550){
-			width:70%;
+			width: 70%;
 
 		}
 		&:hover {
@@ -35,6 +35,6 @@
 }
 .community-button-01 {
 	@include media($max550){
-		margin-bottom:15px;
+		margin-bottom: 15px;
 	}
 }

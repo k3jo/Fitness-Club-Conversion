@@ -23,7 +23,7 @@
 	position:relative;
 	margin-right:6rem;
 	width: 255px;
-	padding:10px;
+	padding: 10px;
 	@include media($tablet){
 		align-self:flex-start;
 		background:white;
@@ -36,17 +36,19 @@
 		text-transform:uppercase;
 		line-height:0;
 		@include media($tablet){
-			@extend h2;
+			font-size:1.7rem;
+			line-height:2.5rem;
 			color:black;
 			font-family: 'Montserrat', sans-serif;
 			font-weight:700;
 		}
 	}
 	.space {
-		font-family:Montserrat, sans-serif;
-		font-size:23px;
+		font-family: Montserrat, sans-serif;
+		font-size: 23px;
 		@include media($tablet){
-			@extend h3;
+			color:$cyan;
+			line-height:2rem;
 			font-size: 1.17em;
 		}
 	}
